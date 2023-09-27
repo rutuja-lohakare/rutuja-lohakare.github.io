@@ -1482,3 +1482,13 @@ footer .credits a {
 .service-content {
   text-align: start !important;
 }
+.skill-logo {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 12px;
+}
+.card {
+  width: 190px;
+  height: 190px;
+}
