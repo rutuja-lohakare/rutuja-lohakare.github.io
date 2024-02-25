@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Portfolio Details</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <main id="main">
+
+    <!-- ======= Portfolio Details ======= -->
+    <div id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="">
+
+          <h2 class="portfolio-title">Avocado Price Prediction and Analysis</h2>
+          <!-- <div class="col-lg-12">
+
+            <div class="d-flex justify-content-center align-items-center">
+              <div class="portfolio-details-slider swiper">
+                <div class="swiper-wrapper align-items-center">
+
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/portfolio-details-1.jpg" alt="">
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/portfolio-details-2.jpg" alt="">
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/portfolio-details-3.jpg" alt="">
+                  </div>
+
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div> -->
+
+          <div class=" col-lg-12 portfolio-info">
+            <h3>Introduction</h3>
+            <p>
+              Avocado has become one of the world's trendiest foods. According to the poster child of millennial healthy
+              eating, this super food is now a mainstay for foodies everywhere. Avocado prices have rocketed in recent
+              years by up to 129%, with the average national price of a single Hass avocado reaching $2.10 in 2019,
+              almost doubling in just one year. The main objectives of this study were to predict avocado prices using
+              the data gathered by Hass Avocado Board (HAB) - a trade organization that provides industry professionals
+              with research and data on avocado prices around the world. Next is to find out pattern in attributes that
+              affect the prices of avocados.
+              <br> <br>
+              The project undertakes a comprehensive analysis of avocado prices, utilizing a robust dataset to uncover
+              underlying patterns and predict future prices. The focus lies in understanding the factors affecting
+              avocado prices and leveraging data analysis and machine learning techniques for predictive modeling.
+            </p>
+
+            <h3>Data Extraction and Cleaning</h3>
+            <p>The initial phase involves extracting data from a large dataset, followed by rigorous data cleaning. This
+              step is crucial to prepare the data for analysis by removing or modifying incorrect, incomplete,
+              irrelevant, duplicated, or improperly formatted data. Such meticulous data cleaning ensures accuracy in
+              the subsequent analysis and modeling stages.</p>
+
+            <h3>Exploratory Analysis</h3>
+            <p>The exploratory analysis phase concentrates on identifying seasonal patterns in avocado prices. This part
+              of the analysis uses time series forecasting techniques to observe constant patterns that frequently occur
+              year to year and month to month in both conventional and organic types of avocados. Tools such as dplyr,
+              ggplot2, and DataExplorer in R are utilized for this analysis, enabling a detailed understanding of the
+              data's temporal dynamics.
+            </p>
+
+            <h3>Applying DMBI/ML Algorithms</h3>
+            <ul>
+              <li><span>Linear Regression</span>: Linear regression is employed to predict the value of a continuous
+                variable (Y) based on one or more input predictor variables (X). The aim is to establish a mathematical
+                relationship between the response variable and the predictors. The model is used to ascertain the
+                importance of features by examining their coefficients. A significant coefficient indicates a spaner
+                impact of the corresponding feature on the prediction.
+              </li>
+              <li><span>Decision Tree Regressor</span>: This algorithm is used to further classify and predict
+                avocado prices. The dataset is split into training and testing sets, and the decision tree is built on
+                the training set. Predictions are then made on the testing set, and the model's accuracy is evaluated
+                using metrics like Root Mean Squared Error (RMSE), Mean Squared Error (MSE), and Mean Absolute Error
+                (MAE). A lower MSE indicates that the model's predictions are accurate and close to the actual values.
+              </li>
+            </ul>
+
+            <h3>Results</h3>
+            <p>
+              The results from linear regression confirm the hypothesis that avocado prices tend to decrease as volume
+              sold increases, with the negative coefficient being statistically significant. Both conventional and
+              organic types of avocados follow this trend. The decision tree regressor also shows good predictive
+              accuracy, as indicated by the low MSE value. These results are pivotal for understanding market dynamics
+              and can guide decision-making in the avocado supply chain.
+            </p>
+
+            <h3>Conclusion</h3>
+            <p>The project demonstrates the effectiveness of using R for analyzing and designing various algorithms on
+              datasets. R's capabilities extend beyond predictive modeling to include exploratory data analysis and data
+              preprocessing. It's particularly adept at handling large datasets and can be used to work on smaller
+              subsets of data to prevent issues like overfitting. The application of both linear regression and decision
+              tree algorithms provides a comprehensive view of the factors influencing avocado prices and their
+              prediction.
+            </p>
+
+            <a href="https://github.com/rutuja-lohakare/Avocado-Prices-Prediction-And-Analysis"> Github Repository <i
+                class="bi bi-box-arrow-up-right"></i> </a>
+          </div>
+
+        </div>
+
+      </div>
+    </div><!-- End Portfolio Details -->
+
+  </main><!-- End #main -->
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
