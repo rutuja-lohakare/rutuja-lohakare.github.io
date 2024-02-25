@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Portfolio Details</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <main id="main">
+        <!-- ======= Portfolio Details ======= -->
+        <div id="portfolio-details" class="portfolio-details">
+            <div class="container">
+                <div class="">
+                    <h2 class="portfolio-title">Residential Property Valuation</h2>
+                    <div class="col-lg-12 portfolio-info">
+                        <h3>Introduction</h3>
+                        <p>
+                            This project tackled the challenge of ensuring equitable and transparent property valuation
+                            in Cook County, Illinois. It aimed to develop a statistical model that could accurately
+                            predict fair market prices, particularly in lower socioeconomic areas. The project endeavors
+                            to provide fairer property assessments for homeowners, ultimately contributing to a more
+                            just and transparent valuation process.
+                        </p>
+                        <h3>Data Preparation</h3>
+                        <ul>
+                            <li><span>Data Cleaning:</span> Large datasets like "historic_property_data" containing
+                                50,000
+                                recent sales and a "codebook" defining relevant variables were utilized. The process
+                                involved removing non-predictive attributes according to the codebook and
+                                eliminating duplicate entries to ensure data integrity.
+                            </li>
+                            <li>
+                                <span>
+                                    Missing Value Imputation:
+                                </span>
+                                To address missing data, the Last Observation Carried Forward (LOCF) method was used for
+                                time-sensitive features like neighborhood and
+                                town codes, while the mean of respective columns was used to impute missing numeric
+                                values.
+                            </li>
+                            <li>
+                                <span>
+                                    Variable Selection:
+                                </span>
+                                Focusing on location dimensions and flood risk, the selection
+                                process prioritized using numerical scales to avoid conversions and facilitate
+                                analysis. Correlation matrices and Variance Inflation Factors (VIF) helped identify
+                                and remove highly correlated variables, preventing the model from being misled by
+                                redundant information.
+                            </li>
+                        </ul>
+                        <h3>Modeling and Evaluation</h3>
+                        <The>
+                            A combination of modeling techniques was employed, including linear regression, random
+                            forest, and lasso regression. Cross-validation methods were meticulously applied to enhance
+                            the models' accuracy and ensure their robustness across different data subsets. This
+                            exploration of diverse techniques allowed for a deeper understanding of the data's
+                            underlying patterns and relationships.
+                            <br> <br>
+                            The final stage involved a rigorous evaluation of the models' performance using Mean Squared
+                            Error (MSE) as the primary metric. This metric quantified the difference between predicted
+                            and actual values, providing insights into the models' effectiveness in accurately
+                            estimating fair market prices. The evaluation also identified areas for further improvement,
+                            such as incorporating additional predictors related to construction quality to refine the
+                            model's accuracy further.</p>
+                            <h3>Conclusion</h3>
+                            <p>This project adopted a comprehensive and data-driven approach, combining advanced data
+                                preprocessing techniques, strategic variable selection, diverse modeling methods, and
+                                thorough evaluation. This multi-faceted approach aimed to address the challenges faced
+                                by
+                                the Cook County Assessor's Office in predicting fair market prices for homes, ultimately
+                                contributing to a more equitable and transparent valuation system in the county.
+                            </p>
+                            <a href="https://github.com/rutuja-lohakare/Statistical-Modeling-For-Property-Valuation">
+                                Github
+                                Repository <i class="bi bi-box-arrow-up-right"></i> </a>
+                    </div>
+                </div>
+
+            </div>
+        </div><!-- End Portfolio Details -->
+
+    </main><!-- End #main -->
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
